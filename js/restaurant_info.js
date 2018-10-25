@@ -120,7 +120,10 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     row.appendChild(time);
 
     hours.appendChild(row);
+<<<<<<< HEAD
     hours.setAttribute('tabindex', '0');
+=======
+>>>>>>> cf96e1f2a9a16b71971286a23ffa9118b0ec1b1a
   }
 }
 
@@ -129,9 +132,15 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
+<<<<<<< HEAD
   const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
   title.setAttribute('tabindex', '0');
+=======
+  const title = document.createElement('h2');
+  title.innerHTML = 'Reviews';
+  title.setAttribute('tabindex', '1');
+>>>>>>> cf96e1f2a9a16b71971286a23ffa9118b0ec1b1a
   container.appendChild(title);
 
   if (!reviews) {
@@ -179,7 +188,10 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
   const li = document.createElement('li');
   li.innerHTML = restaurant.name;
   breadcrumb.appendChild(li);
+<<<<<<< HEAD
   breadcrumb.setAttribute('tabindex', '0');
+=======
+>>>>>>> cf96e1f2a9a16b71971286a23ffa9118b0ec1b1a
 }
 
 /**
